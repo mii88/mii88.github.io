@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /resume.html
+Disallow: /resume_1.webp
+Disallow: /resume_2.webp
+Disallow: /resume_3.webp
