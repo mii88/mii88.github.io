@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>...</title>
+    <script>
+        // if (location.protocol !== 'https:') {
+        //     location.href = 'https://' + location.hostname;
+        // }
+        if (location.search === '') {
+            location.href = 'https://github.com/mizuhomizuho?tab=repositories';
+        }
+        else {
+            location.href = `https://github.com/mizuhomizuho${location.search}`;
+        }
+    </script>
+</head>
+<body>
+<h1>
+    <a href="https://github.com/mizuhomizuho?tab=repositories">https://github.com/mizuhomizuho</a>
+</h1>
+</body>
+</html>

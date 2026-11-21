@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "KpProgrammerNbp";
+    src: url("/fonts/KpProgrammerNbp.woff2") format("woff2"),
+    url("/fonts/KpProgrammerNbp.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141414;
+    color: #F7F7F7;
+    font-size: 20px;
+    line-height: 28px;
+
+    font-family: "KpProgrammerNbp", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+    color: #3687EB;
+    border-bottom: 1px solid #3687EB;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+@media (width <= 575px) {
+    h1 {
+        font-size: 35px;
+    }
+}
+
+h1:after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 36px;
+    background-color: #F7F7F7;
+    animation: blinking-cursor 1s infinite;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-left: 15px;
+}
+
+@media (width <= 575px) {
+    h1:after {
+        width: 1px;
+        height: 26px;
+        top: -1px;
+    }
+}
+
+@keyframes blinking-cursor {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+h3 {
+    margin: 71px 0 15px;
+}
+
+h3 span {
+    color: #888;
+}
+
+pre {
+    font-size: 20px;
+    line-height: 28px;
+
+    font-family: "KpProgrammerNbp", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+.contacts-box {
+    flex-direction: column;
+    display: flex;
+    gap: 12px;
+}
+
+.body-box {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+@media (width <= 575px) {
+    .body-box {
+        display: flex;
+        justify-content: center;
+        padding: 20px 15px;
+    }
+}
+
+.body-wrap {
+    max-width: 800px;
+    width: 100%;
+    padding: 15px 30px 30px;
+    border: 2px solid #535353;
+    border-radius: 12px;
+}
+
+@media (width <= 575px) {
+    .body-wrap {
+        padding: 0 0 15px;
+        border: 0;
+    }
+}
+
+.dino-box {
+    display: flex;
+    justify-content: center;
+}
+
+.dino-img {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+}
+
+.dino-img:after {
+    content: '';
+    position: absolute;
+    background-color: #535353;
+    height: 1px;
+    width: 66px;
+    left: 0;
+    bottom: 48px;
+    border-top: 1px solid #464646;
+    border-bottom: 1px solid #464646;
+}
+
+.dino-img img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
